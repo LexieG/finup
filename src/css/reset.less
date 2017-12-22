@@ -1,0 +1,41 @@
+/**
+* 所有页面通用的样式
+*/
+@import "./variables.less";
+html,
+body {
+    height: 100%;
+    font-family: @font-family;
+    color: @main-color;
+    margin: 0;
+    font-weight: 400;
+    font-size: @font-size-base;
+    -webkit-font-smoothing: antialiased;
+}
+input,
+textarea,
+button,
+select,
+a {
+    font-family: @font-family;
+    outline: 0;
+}
+
+
+// 链接默认样式
+a {
+    color: @theme-color;
+    text-decoration: none;
+    &:hover {
+        color: @theme-color-hover;
+        text-decoration: underline;
+    }
+    &:focus {
+        color: @theme-color-active;
+        text-decoration: underline;
+    }
+}
+
+* {
+    outline: 0;
+}
